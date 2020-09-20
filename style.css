@@ -1,0 +1,22 @@
+body {
+    background-image: url(./guess-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 96vh;
+}
+
+h1 {
+    display: block;
+    border: 2px solid red;
+    text-align: center;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+button {
+    margin-left: 3px;
+}
