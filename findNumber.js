@@ -1,6 +1,15 @@
 var rand = Math.floor((Math.random() * 100) + 1);
 document.getElementById("demo").innerHTML = rand;
 
+var input = document.getElementById("number");
+
+input.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+    event.preventDefault();
+    document.getElementById("click").click();
+    }
+});
+
 function myFunc(){
     const num = document.getElementById("number").value;
     if (num==""){
@@ -9,7 +18,6 @@ function myFunc(){
     else {
         if (num==rand){
             window.alert(`You are the winner :D. You guest after ${count+1} times!`);
-            // confirm("You wanna play again?");
             if (confirm("You wanna play again?")) {
                 document.getElementById("click-count").remove();
                 location.reload();
@@ -25,6 +33,8 @@ function myFunc(){
             document.getElementById("warn").innerHTML = "I am thinking about lower number";
         }
     }
+    document.getElementById("number").value = "";
+    document.getElementById("number").focus();
 }
 
 var click = document.getElementById("click"), count = 0;
@@ -33,18 +43,3 @@ function clickCount() {
   count += 1;
   document.getElementById("click-count").innerHTML = "This is your test number: " + count;
 };
-
-// function playAgain() {
-//     var txt;
-//     if (confirm("You wanna play again?")) {
-//         txt = "You pressed OK!";
-//     } else {
-//         txt = "You pressed Cancel!";
-//     }
-//     document.getElementById("demo2").innerHTML = txt;
-// }
-
-
-// You are the winner :D. You guest after4 times!
-// You wanna play again?
-// Thanks for game!
