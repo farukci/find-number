@@ -38,3 +38,19 @@ button {
 #demo{
     display: none;
 }
+
+#rabbit{
+    display: inline-block;
+    width: 200px;
+    position: absolute;
+    right: 170px;
+    bottom: 260px;
+    visibility: hidden;
+}
+
+#p-rabbit{
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}

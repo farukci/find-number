@@ -17,13 +17,18 @@ function myFunc(){
     }
     else {
         if (num==rand){
+            var rabbit = document.getElementById('rabbit');
+            rabbit.style.visibility = 'visible';
             window.alert(`You are the winner :D. You guest after ${count+1} times!`);
             if (confirm("You wanna play again?")) {
                 document.getElementById("click-count").remove();
-                location.reload();
+                // location.reload();
+                window.setTimeout(function(){window.location.reload()}, 3000);
+                document.getElementById("p-rabbit").innerHTML = "Voilà! You pulled the rabbit out of hat!";
             } else {
                 document.getElementById("warn").innerHTML = "Thanks for game!";
                 document.getElementById("click-count").remove();
+                document.getElementById("p-rabbit").innerHTML = "Voilà! You pulled the rabbit out of hat!";
             }
         }
         else if (num < rand){
@@ -43,3 +48,9 @@ function clickCount() {
   count += 1;
   document.getElementById("click-count").innerHTML = "This is your test number: " + count;
 };
+
+// function showRabbit() {
+//     if 
+//     var img = document.getElementById('myImageId');
+//     img.style.visibility = 'visible';
+// }
