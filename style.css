@@ -26,3 +26,9 @@ button {
     text-align: center;
     font-size: 20px;
 }
+
+#click-count{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
