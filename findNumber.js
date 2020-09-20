@@ -1,5 +1,5 @@
 var rand = Math.floor((Math.random() * 100) + 1);
-document.getElementById("demo").innerHTML = rand;
+// document.getElementById("demo").innerHTML = rand;
 
 function myFunc(){
     const num = document.getElementById("number").value;
@@ -11,6 +11,7 @@ function myFunc(){
             window.alert(`You are the winner :D. You guest after ${count+1} times!`);
             // confirm("You wanna play again?");
             if (confirm("You wanna play again?")) {
+                document.getElementById("click-count").remove();
                 location.reload();
             } else {
                 document.getElementById("warn").innerHTML = "Thanks for game!";
