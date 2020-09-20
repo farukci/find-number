@@ -29,6 +29,7 @@ function myFunc(){
                 document.getElementById("warn").innerHTML = "Thanks for game!";
                 document.getElementById("click-count").remove();
                 document.getElementById("p-rabbit").innerHTML = "Voilà! You pulled the rabbit out of hat!";
+                document.getElementById("warn").remove();
             }
         }
         else if (num < rand){
