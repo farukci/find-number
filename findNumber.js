@@ -1,5 +1,5 @@
 var rand = Math.floor((Math.random() * 100) + 1);
-// document.getElementById("demo").innerHTML = rand;
+document.getElementById("demo").innerHTML = rand;
 
 function myFunc(){
     const num = document.getElementById("number").value;

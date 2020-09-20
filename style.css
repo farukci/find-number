@@ -32,3 +32,7 @@ button {
     text-align: center;
     font-size: 20px;
 }
+
+#demo{
+    display: none;
+}
