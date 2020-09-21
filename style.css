@@ -1,7 +1,8 @@
 body {
-    background-image: url(./guess-bg.png);
+    background-image: url(./guess-bg1.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: scroll;
     height: 96vh;
 }
 
@@ -39,14 +40,17 @@ button {
     display: none;
 }
 
-#rabbit{
-    display: inline-block;
-    width: 200px;
+
+/* #rabbit{
+    display: none;
+    max-width: 200px;
+    height: auto;
     position: absolute;
     right: 170px;
     bottom: 260px;
     visibility: hidden;
-}
+    background-attachment: fixed;
+} */
 
 #p-rabbit{
     display: block;

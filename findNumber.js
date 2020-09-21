@@ -17,8 +17,9 @@ function myFunc(){
     }
     else {
         if (num==rand){
-            var rabbit = document.getElementById('rabbit');
-            rabbit.style.visibility = 'visible';
+            // var rabbit = document.getElementById('rabbit');
+            // rabbit.style.visibility = 'visible';
+            document.body.style.backgroundImage = "url('./guess-bg2.png')";
             window.alert(`You are the winner :D. You guest after ${count+1} times!`);
             if (confirm("You wanna play again?")) {
                 document.getElementById("click-count").remove();
@@ -49,9 +50,3 @@ function clickCount() {
   count += 1;
   document.getElementById("click-count").innerHTML = "This is your test number: " + count;
 };
-
-// function showRabbit() {
-//     if 
-//     var img = document.getElementById('myImageId');
-//     img.style.visibility = 'visible';
-// }
